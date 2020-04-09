@@ -1,0 +1,25 @@
+{
+  "name": "creativeIdeia",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitorrubim1/creativeIdea.git"
+  },
+  "keywords": [],
+  "author": "Vitor Rubim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitorrubim1/creativeIdea/issues"
+  },
+  "homepage": "https://github.com/vitorrubim1/creativeIdea#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.3",
+    "nunjucks": "^3.2.1"
+  }
+}

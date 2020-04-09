@@ -1,0 +1,39 @@
+{% extends "layout.html" %} <!--LEVANDO O CONTEÚDO DO IDEIAS PRO LAYOUT.HTML--> 
+{% set bodyId = "page-ideas" %} <!--LEVANDO A REFERENCIA DE ESTILO DO IDEIAS PRO LAYOUT.HTML-->
+
+
+{% block title %}   
+    <title>Ideias Criativas</title>
+{% endblock title %}
+
+
+{% block content %}
+    <header>
+        <a href="/">
+            <img src="/img/logo.png" alt="Logomarca" id="logo">
+        </a>
+        <nav>
+            <li><a href="/">Início</a></li>
+            <li><a href="#" class="button" onclick="onOff()">Nova ideia</a></li>
+        </nav>
+    </header>
+
+    <section id="title">
+        <p>Em exibição</p>
+        <h1>Ideias</h1>
+    </section>
+
+    <main>
+
+        <section id="ideas">
+
+            {% include "allIdeas.html" %}
+            <!--INCLUINDO O FOR DAS IDEIAS-->
+
+        </section>
+    </main>
+
+    <footer>
+        Com ♥ <a href="https://github.com/vitorrubim1/" target="_blank">Vitor Rubim</a>
+    </footer>
+{% endblock %}

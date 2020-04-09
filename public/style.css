@@ -129,7 +129,7 @@ footer{
     background: #5a2ea6;
 
     /*PARA SOBREPOR TODA TELA*/
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
