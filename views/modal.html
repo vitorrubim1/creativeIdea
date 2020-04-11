@@ -3,31 +3,32 @@
     <div class="content">
         <h1>Nova ideia</h1>
 
-        <form action="">
+        <form action="/" method="POST" onsubmit="return checkFields(event)">
 
             <div class="input-wrapper">
                 <label for="title">Título da ideia</label>
-                <input type="text" name="title">
+                <input required type="text" name="title">
             </div>
 
             <div class="input-wrapper">
                 <label for="category">Categoria</label>
-                <input type="text" name="category">
+                <input required type="text" name="category">
             </div>
 
             <div class="input-wrapper">
                 <label for="image">Link da imagem :))</label>
-                <input type="url" name="image">
+                <input required type="url" name="image">
+                <small>Imagem em extensão .PNG, por favor!</small>
             </div>
 
             <div class="input-wrapper">
                 <label for="description">Digite uma Descrição para esta ideia</label>
-                <textarea name="description" cols="30" rows="10"> </textarea>
+                <textarea required name="description" cols="30" rows="10"> </textarea>
             </div>
 
             <div class="input-wrapper">
                 <label for="image">Link da ideia</label>
-                <input type="url" name="link">
+                <input required type="url" name="link">
             </div>
 
             <a href="#" onclick="onOff()">Voltar</a>
