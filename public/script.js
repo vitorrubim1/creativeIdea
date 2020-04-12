@@ -29,6 +29,7 @@ function checkFields(event){
         "link",
     ];
 
+
     //VERIFICAÇÃO SE ESTA VAZIO
     const isEmpty = valuesToCheck.find(function(value){
 
@@ -38,12 +39,11 @@ function checkFields(event){
         //PASSO DUAS VERIFICAÇÕES NO IF, PORÉM AS DUAS TEM QUE SER TRUE
         if(checkIfIsString && checkIfIsEmpty){
             return true
-        }
-
+        }        
+    })
         //SE ALGUM CAMPO TIVER VAZIO
         if(isEmpty){
             event.preventDefault(); //FAZENDO COM QUE O FORMULÁRIO NÃO SEJA SUBMITADO
             alert("Por favor, preencha todos os campos!") 
         }
-    })
 }
